@@ -79,7 +79,9 @@ typedef enum _meshtastic_TelemetrySensorType {
     /* SCD40/SCD41 CO2, humidity, temperature sensor */
     meshtastic_TelemetrySensorType_SCD4X = 32,
     /* ClimateGuard RadSens, radiation, Geiger-Muller Tube */
-    meshtastic_TelemetrySensorType_RADSENS = 33
+    meshtastic_TelemetrySensorType_RADSENS = 33,
+    /* DS18B20 temperature sensor*/
+    meshtastic_TelemetrySensorType_DS18B20 = 34
 } meshtastic_TelemetrySensorType;
 
 /* Struct definitions */
