@@ -27,6 +27,8 @@
 #include "Sensor/CGRadSensSensor.h"
 #include "Sensor/RCWL9620Sensor.h"
 #include "Sensor/nullSensor.h"
+#include "Sensor/DS18B20Sensor.h"
+DS18B20Sensor ds18b20Sensor;
 
 namespace graphics
 {
@@ -296,6 +298,8 @@ int32_t EnvironmentTelemetryModule::runOnce()
                 result = max17048Sensor.runOnce();
             if (cgRadSens.hasSensor())
                 result = cgRadSens.runOnce();
+            if (ds18b20Sensor.hasSensor())
+                result = ds18b20Sensor.runOnce();
             if (pct2075Sensor.hasSensor())
                 result = pct2075Sensor.runOnce();
                 // this only works on the wismesh hub with the solar option. This is not an I2C sensor, so we don't need the
