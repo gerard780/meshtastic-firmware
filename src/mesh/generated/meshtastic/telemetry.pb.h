@@ -94,6 +94,8 @@ typedef enum _meshtastic_TelemetrySensorType {
     meshtastic_TelemetrySensorType_PCT2075 = 39,
     /* ADS1X15 ADC */
     meshtastic_TelemetrySensorType_ADS1X15 = 40
+    /* DS18B20 temperature sensor*/
+    meshtastic_TelemetrySensorType_DS18B20 = 41
 } meshtastic_TelemetrySensorType;
 
 /* Struct definitions */
